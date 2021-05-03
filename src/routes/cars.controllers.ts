@@ -11,7 +11,7 @@ export const getCars: RequestHandler = async (req, res) => {
 };
 
 export const addCar: RequestHandler = async (req, res) => {
-  const carFound = await Cars.findOne({ id: req.body.id });
+  const carFound = await Cars.findOne({ carId: req.body.carId });
   if (carFound)
     return res.status(301).json({ message: "This car already exist" });
   const newCar = new Cars(req.body);

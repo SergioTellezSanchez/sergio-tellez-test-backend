@@ -1,38 +1,39 @@
-POST http://localhost:3000/cars
+POST http://localhost:4000/cars
 Content-Type: application/json
 
 {
-  "description": "Change of suspension",
-  "maker": "Nissan",
-  "car_model": "Versa",
-  "estimated_date": "2021/12/01",
-  "id": 3340,
-  "km": 500,
-  "onMaintenance": true,
   "personalData": {
-    "ownerName": "Andrey",
-    "ownerNumber": 55555555,
-    "ownerAddress": "Mexico City"
-  }
+    "ownerName": "Lucas",
+    "ownerNumber": 555444444,
+    "ownerAddress": "Madrid"
+  },
+  "description": "Change lights",
+  "maker": "Chevrolet",
+  "carModel": "Spark",
+  "estimatedDate": "2021-10-13",
+  "carId": 3347,
+  "km": 16098,
+  "onMaintenance": true
 }
 
+
 ###
 
-GET http://localhost:3000/cars
+GET http://localhost:4000/cars
 Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/cars/608a4a4a5bfcd42184f874bd
+DELETE http://localhost:4000/cars/60905ab1da8c002d7c125a97
 Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/cars/608b33ef71ecfd5910095e13
+PUT http://localhost:4000/cars/60904651f04e705144756ae1
 Content-Type: application/json
 
 {
-  "onMaintenance": false
+  "estimatedDate": "2021/10/13"
 }
 
 ###

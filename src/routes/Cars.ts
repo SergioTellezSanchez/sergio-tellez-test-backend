@@ -12,17 +12,16 @@ const carSchema = new Schema(
       required: true,
       trim: true,
     },
-    car_model: {
+    carModel: {
       type: String,
       required: true,
       trim: true,
     },
-    estimated_date: {
-      type: String,
-      required: true,
+  estimatedDate: {
+      type: Date,
       trim: true,
     },
-    id: {
+    carId: {
       type: Number,
       required: true,
       trim: true,
@@ -33,23 +32,19 @@ const carSchema = new Schema(
       trim: true,
     },
     onMaintenance: {
-      type: Boolean,
-      required: true,
+      type: Boolean
     },
     personalData: {
       ownerName: {
         type: String,
-        required: true,
         trim: true,
       },
       ownerNumber: {
         type: Number,
-        required: true,
         trim: true,
       },
       ownerAddress: {
         type: String,
-        required: true,
         trim: true,
       },
     },
